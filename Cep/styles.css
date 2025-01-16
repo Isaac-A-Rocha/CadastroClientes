@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #7a5cd9, #4f8ff7); /* Gradiente suave de cores vibrantes */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column; /* Layout vertical */
+    align-items: center;
+    gap: 30px; /* Espaçamento vertical entre os formulários */
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco suave com opacidade */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.input-container label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-container input {
+    width: 100%;
+    height: 50px;
+    background: #f1f1f1; /* Cor de fundo clara para os campos de entrada */
+    border: 1px solid #ccc; /* Borda fina e clarinha */
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333; /* Cor do texto mais escura para contraste */
+    padding: 15px 45px 15px 20px;
+    box-sizing: border-box;
+}
+
+.input-container input::placeholder {
+    color: #888; /* Cor de placeholder suave */
+}
+
+.input-container img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 20px;
+}
+
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: #5100b5; /* Cor vibrante para o botão */
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #6e16da; /* Cor mais clara ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .form-wrapper {
+        width: 95%;
+    }
+    .input-container input {
+        font-size: 14px;
+    }
+    .submit-button {
+        font-size: 14px;
+    }
+}

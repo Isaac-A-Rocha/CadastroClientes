@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Automático</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Endereço</h1>
+        <form id="addressForm">
+            <div class="input-container">
+                <input id="cep" placeholder="CEP" type="text" required title="Formato: 00000-000">
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/marker.png" alt="cep-icon" />
+            </div>
+
+            <div class="input-container">
+                <input id="endereco" placeholder="Endereço" type="text" required>
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/home.png" alt="address-icon" />
+            </div>
+
+            <div class="input-container">
+                <input id="bairro" placeholder="Bairro" type="text" required>
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/neighborhood.png" alt="neighborhood-icon" />
+            </div>
+
+            <div class="input-container">
+                <input id="cidade" placeholder="Cidade" type="text" required>
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/city.png" alt="city-icon" />
+            </div>
+
+            <div class="input-container">
+                <input id="estado" placeholder="Estado" type="text" required>
+                <img width="20" height="20" src="https://img.icons8.com/ios/50/map.png" alt="state-icon" />
+            </div>
+
+            <button type="button" class="submit-button" onclick="confirmarDados()">Confirmar</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #7a5cd9, #4f8ff7); /* Gradiente suave de cores vibrantes */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco suave com opacidade */
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px 0;
+}
+
+.input-container input {
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1; /* Cor de fundo clara para os campos de entrada */
+    border: 1px solid #ccc; /* Borda fina e clarinha */
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333; /* Cor do texto mais escura para contraste */
+    padding: 15px 45px 15px 20px;
+}
+
+.input-container input::placeholder {
+    color: #888; /* Cor de placeholder suave */
+}
+
+.input-container img {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+}
+
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: #5100b5; /* Cor vibrante para o botão */
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #6e16da; /* Cor mais clara ao passar o mouse */
+}
